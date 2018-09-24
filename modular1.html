@@ -1,0 +1,25 @@
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+</head>
+<body>
+<div id="peopleModule">
+    <h1>People</h1>
+    <input id="js_add_person_input" placeholder="name" type="text">
+    <button id="js_add_person">Add Person</button>
+    <ul id="js_people_template_holder">
+        <script id="js_people_template" type="text/template">
+            {{#people}}
+                <li class="js_persone_holder">
+                    <span>{{.}}</span>
+                    <i class="js_remove">X</i>
+                </li>
+            {{/people}}
+        </script>
+    </ul>
+</div>
+<script src="modular2.js"></script>
+</body>
+</html>

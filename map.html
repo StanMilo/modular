@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="utf-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var animals = [
+		{ name: 'Kuranjonja', species: 'zec'},
+		{ name: 'Backo', species: 'kornjaca'},
+		{ name: 'Mrgud', species: 'kornjaca'},
+		{ name: 'Zile', species: 'pas'},
+		{ name: 'Micko', species: 'riba'},
+		{ name: 'Baki', species: 'macka'},
+		{ name: 'Guti', species: 'glista'}
+	]
+		// var names = animals.map(function(animal) {
+		// 	return animal.name + ' je ' + animal.species
+		// })
+
+		var names = animals.map((x) => x.name)
+		console.log(names)
+	</script>
+</body>
+</html>
